@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101112">
+  <meta name="description" content="Arena das Camisas — camisas de futebol para vestir sua paixão.">
+  <title>Arena das Camisas | Vista sua paixão</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topline">FRETE GRÁTIS A PARTIR DE R$ 299 <span>•</span> 10% OFF NA PRIMEIRA COMPRA COM <b>ARENA10</b></div>
+  <header class="header">
+    <a class="brand" href="#" aria-label="Arena das Camisas - início">
+      <span class="brand-mark">A<span>+</span></span><span class="brand-name">ARENA <small>DAS CAMISAS</small></span>
+    </a>
+    <button class="mobile-menu icon-btn" id="menuToggle" aria-label="Abrir menu">☰</button>
+    <nav class="nav" id="mainNav">
+      <a href="#novidades">Novidades</a><a href="#times">Times</a><a href="#mais-vendidos">Mais vendidos</a><a href="#colecoes">Coleções</a><a href="#ofertas">Ofertas</a><a href="#tecido">Malha</a>
+    </nav>
+    <div class="header-actions">
+      <label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="Buscar camisa, time..." aria-label="Buscar produtos"><kbd>↵</kbd></label>
+      <div class="account-wrap">
+        <a class="account-link" id="accountLink" href="login.html" aria-label="Entrar na sua conta">
+          <span class="account-avatar" id="accountAvatar" aria-hidden="true"><span>↗</span></span>
+          <span class="account-label" id="accountLabel">ENTRAR</span>
+        </a>
+        <div class="profile-menu" id="profileMenu" hidden>
+          <div class="profile-menu-head">
+            <div class="profile-menu-avatar" id="profileMenuAvatar"></div>
+            <div class="profile-menu-user"><strong id="profileMenuName">Minha conta</strong><span id="profileMenuEmail"></span></div>
+          </div>
+          <a href="#favoritos" class="profile-menu-link" id="profileFavorites">♡ Meus favoritos</a>
+          <button type="button" class="profile-menu-logout" id="profileLogout">Sair da conta <span>↗</span></button>
+        </div>
+      </div>
+      <button class="icon-btn" id="wishlistOpen" aria-label="Favoritos" title="Favoritos">♡<span class="mini-count" id="wishCount">0</span></button>
+      <button class="icon-btn cart-open bag-button" id="cartOpen" aria-label="Abrir sacola de compras" title="Sacola de compras"><svg class="bag-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 8.5h11l1 12h-13l1-12Z"></path><path d="M9 9V6.5a3 3 0 0 1 6 0V9"></path></svg><span class="mini-count" id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="novidades">
+      <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="images/hero-stadium.jpg" aria-hidden="true">
+        <source src="images/hero-video.mp4" type="video/mp4">
+      </video>
+      <div class="hero-shade"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">A TEMPORADA É SUA</p>
+        <h1>A PAIXÃO<br>DO FUTEBOL<br><em>VESTE AQUI.</em></h1>
+        <p class="hero-sub">Sua camisa. Seu time. Sua história.<br>Encontre o manto que representa você.</p>
+        <a class="btn btn-light" href="#mais-vendidos">ENCONTRE SEU MANTO <span>↗</span></a>
+        <div class="hero-note"><span class="live-dot"></span> COLEÇÃO 2025/26 • NOVOS MODELOS</div>
+      </div>
+      <div class="hero-stamp"><b>JOGO</b><b>É</b><b>PAIXÃO</b><small>DESDE SEMPRE.</small></div>
+      <div class="hero-bottom"><span>01 / 03</span><div class="hero-lines"><i></i><i></i><i></i></div><span>ARENA ORIGINAL</span></div>
+    </section>
+
+    <section class="material-section reveal" id="tecido">
+      <div class="material-visual">
+        <div class="material-orbit"></div>
+        <div class="fabric-card"><span>TECNOLOGIA DA MALHA</span><strong>100%</strong><b>POLIÉSTER</b></div>
+      </div>
+      <div class="material-copy">
+        <p class="eyebrow dark-eyebrow">CONFORTO EM CADA JOGADA</p>
+        <h2>A MALHA QUE <em>ACOMPANHA VOCÊ.</em></h2>
+        <p>Todas as camisas da Arena são confeccionadas em poliéster, uma malha leve e resistente pensada para acompanhar a rotina de quem vive futebol.</p>
+        <div class="material-points">
+          <div><span>01</span><p><b>LEVEZA</b><small>Toque leve para usar durante o jogo ou no dia a dia.</small></p></div>
+          <div><span>02</span><p><b>SECAGEM RÁPIDA</b><small>O poliéster ajuda a transportar a umidade e facilita a secagem.</small></p></div>
+          <div><span>03</span><p><b>RESISTÊNCIA</b><small>Fibra durável para acompanhar muitos jogos e lavagens.</small></p></div>
+        </div>
+        <small class="material-note">*As características podem variar conforme a construção e acabamento de cada modelo.</small>
+      </div>
+    </section>
+
+    <section class="benefits" aria-label="Benefícios">
+      <div><span class="benefit-icon">↗</span><p><b>FRETE GRÁTIS</b><small>em compras acima de R$ 299</small></p></div>
+      <div><span class="benefit-icon">▤</span><p><b>ATÉ 12X</b><small>parcele no cartão</small></p></div>
+      <div><span class="benefit-icon">◇</span><p><b>COMPRA SEGURA</b><small>seus dados protegidos</small></p></div>
+      <div><span class="benefit-icon">☏</span><p><b>FALA COM A GENTE</b><small>atendimento pelo WhatsApp</small></p></div>
+    </section>
+
+    <section class="section teams-section" id="times">
+      <div class="section-head"><div><p class="eyebrow dark-eyebrow">ESCOLHA SUA CAMISA</p><h2>QUAL É O SEU <em>TIME?</em></h2></div><a href="#mais-vendidos" class="text-link">VER TODOS <span>↗</span></a></div>
+      <div class="team-grid" id="teamFilters">
+        <button class="team-tile active" data-team="Todos"><span class="team-ball">⚽</span><b>TODOS</b></button>
+        <button class="team-tile" data-team="Real Madrid"><span class="team-badge badge-white">RM</span><b>REAL MADRID</b></button>
+        <button class="team-tile" data-team="Barcelona"><span class="team-badge badge-blue">FCB</span><b>BARCELONA</b></button>
+        <button class="team-tile" data-team="Flamengo"><span class="team-badge badge-red">FLA</span><b>FLAMENGO</b></button>
+        <button class="team-tile" data-team="Corinthians"><span class="team-badge badge-black">SCCP</span><b>CORINTHIANS</b></button>
+        <button class="team-tile" data-team="Palmeiras"><span class="team-badge badge-green">SEP</span><b>PALMEIRAS</b></button>
+        <button class="team-tile" data-team="Seleções"><span class="team-badge badge-yellow">BR</span><b>SELEÇÕES</b></button>
+      </div>
+    </section>
+
+    <section class="section products-section" id="mais-vendidos">
+      <div class="section-head product-heading"><div><p class="eyebrow dark-eyebrow">OS QUERIDINHOS DA TORCIDA</p><h2>MAIS <em>VENDIDOS</em></h2></div>
+        <div class="filters"><button class="filter-btn active" data-sort="featured">Destaques</button><button class="filter-btn" data-sort="priceAsc">Menor preço</button><button class="filter-btn" data-sort="priceDesc">Maior preço</button></div>
+      </div>
+      <div class="result-line"><span id="resultCount">8 produtos</span><span>COLEÇÃO DE CAMISAS • 2025/26</span></div>
+      <div class="product-grid" id="productGrid"></div>
+      <div class="empty-state" id="emptyState" hidden><span>⌕</span><h3>NÃO ENCONTRAMOS ESSE MANTO</h3><p>Tente buscar por outro time ou produto.</p><button class="btn btn-dark" id="clearSearch">LIMPAR BUSCA</button></div>
+      <button class="btn btn-outline load-more" id="loadMore">VER COLEÇÃO COMPLETA <span>＋</span></button>
+    </section>
+
+    <section class="editorial" id="colecoes">
+      <div class="editorial-photo reveal"><div class="editorial-glow"></div></div>
+      <div class="editorial-copy reveal"><p class="eyebrow">FEITA PARA A TORCIDA</p><h2>MAIS QUE UMA<br>CAMISA. <em>IDENTIDADE.</em></h2><p>Da arquibancada ao dia a dia, vista as cores que contam sua história. Descubra os modelos que combinam com a sua paixão.</p><a href="#mais-vendidos" class="btn btn-light">EXPLORE A COLEÇÃO <span>↗</span></a></div>
+    </section>
+
+    <section class="newsletter" id="ofertas"><div><p class="eyebrow dark-eyebrow">ENTRE PARA O TIME</p><h2>OFERTAS NO SEU <em>E-MAIL.</em></h2><p>Receba novidades, lançamentos e ofertas especiais da Arena.</p></div><form id="newsletterForm"><label class="sr-only" for="emailInput">Seu e-mail</label><input id="emailInput" type="email" placeholder="Seu melhor e-mail" required><button class="btn btn-dark" type="submit">QUERO RECEBER ↗</button><small id="newsletterMsg">Sem spam. Só futebol e boas ofertas.</small></form></section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top"><a class="brand brand-footer" href="#"><span class="brand-mark">A<span>+</span></span><span class="brand-name">ARENA <small>DAS CAMISAS</small></span></a><p>MAIS QUE CAMISAS. <b>PAIXÃO EM CAMPO.</b></p><a class="whatsapp-link" href="https://wa.me/5521967492863" target="_blank" rel="noopener">☏ Fale com a gente no WhatsApp ↗</a></div>
+    <div class="footer-columns"><div><b>AJUDA</b><a href="#ajuda" data-info="Entrega">Entrega e frete</a><a href="#ajuda" data-info="Trocas">Trocas e devoluções</a><a href="#ajuda" data-info="Tamanhos">Guia de tamanhos</a></div><div><b>ARENA</b><a href="#times">Times</a><a href="#ofertas">Novidades</a></div><div><b>SEGURANÇA</b><span>Compra protegida</span><span>Seus dados em segurança</span><span>Atendimento humanizado</span></div><div><b>REDES SOCIAIS</b><div class="socials"><a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">ig</a><a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok">♪</a><a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">f</a></div></div></div>
+    <div class="footer-bottom"><span>© 2025 ARENA DAS CAMISAS. TODOS OS DIREITOS RESERVADOS.</span><span>FEITO PARA QUEM VIVE FUTEBOL ⚽</span></div>
+  </footer>
+
+  <div class="cookie-banner" id="cookieBanner" role="dialog" aria-labelledby="cookieTitle" aria-describedby="cookieText">
+    <div class="cookie-copy">
+      <span class="cookie-icon">🍪</span>
+      <div><h2 id="cookieTitle">SUA PRIVACIDADE IMPORTA</h2><p id="cookieText">Usamos cookies para melhorar sua experiência, lembrar suas preferências e deixar a Arena mais prática para você.</p></div>
+    </div>
+    <div class="cookie-actions"><button class="cookie-more" id="cookieMore">Saiba mais</button><button class="btn btn-green cookie-accept" id="acceptCookies">ACEITAR COOKIES <span>✓</span></button></div>
+  </div>
+
+  <div class="coupon-modal" id="couponModal" role="dialog" aria-modal="true" aria-labelledby="couponTitle">
+    <button class="close-btn coupon-close" id="couponClose" aria-label="Fechar">×</button>
+    <div class="coupon-badge">10% OFF</div>
+    <p class="eyebrow dark-eyebrow">BEM-VINDO À ARENA</p>
+    <h2 id="couponTitle">SEU PRIMEIRO<br><em>MANTO</em> TEM DESCONTO.</h2>
+    <p>Use o cupom em <b>qualquer camisa</b> da loja e ganhe 10% de desconto.</p>
+    <div class="coupon-code"><strong>ARENA10</strong><button id="copyCoupon">COPIAR</button></div>
+    <button class="btn btn-dark coupon-use" id="useCoupon">USAR MEU CUPOM <span>↗</span></button>
+    <small>O desconto será aplicado no checkout.</small>
+  </div>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="cartDrawer" aria-label="Sacola de compras" aria-hidden="true">
+    <div class="drawer-head"><div><p class="eyebrow dark-eyebrow">SEU PEDIDO</p><h2>MINHA SACOLA <span id="drawerCount">(0)</span></h2></div><button class="close-btn" data-close aria-label="Fechar">×</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer" id="cartFooter"><div class="shipping-progress"><span>🚚</span><div><b id="shippingText">Faltam R$ 299 para frete grátis</b><div class="progress"><i id="shippingProgress"></i></div></div></div><div class="summary-row"><span>Subtotal</span><b id="subtotal">R$ 0,00</b></div><div class="summary-row coupon-summary" id="cartCouponRow" hidden><span>Desconto <b id="cartCouponLabel">ARENA10</b></span><b id="cartDiscount">- R$ 0,00</b></div><div class="summary-row"><span>Frete</span><b id="shippingValue">A calcular</b></div><div class="summary-row total-row"><span>TOTAL</span><b id="total">R$ 0,00</b></div><button class="btn btn-green checkout-btn" id="checkoutBtn">CONTINUAR PEDIDO <span>↗</span></button><small>Você escolherá a cidade e a forma de pagamento antes de abrir o WhatsApp.</small></div>
+  </aside>
+  <aside class="drawer" id="wishDrawer" aria-label="Favoritos" aria-hidden="true"><div class="drawer-head"><div><p class="eyebrow dark-eyebrow">SEUS MANTOS FAVORITOS</p><h2>MINHA LISTA <span id="wishDrawerCount">(0)</span></h2></div><button class="close-btn" data-close aria-label="Fechar">×</button></div><div class="cart-items" id="wishItems"></div></aside>
+
+  <div class="modal checkout-modal" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+    <button class="close-btn modal-close" data-close aria-label="Fechar">×</button>
+    <div class="checkout-panel">
+      <div>
+        <p class="eyebrow dark-eyebrow">FINALIZAR PEDIDO</p>
+        <h2 id="checkoutTitle">COMO VAMOS <em>FECHAR?</em></h2>
+        <p class="checkout-help">Preencha os dados abaixo. O pedido será aberto no WhatsApp <b>(21) 96749-2863</b> já organizado para você conferir antes de enviar.</p>
+      </div>
+      <div class="checkout-fields">
+        <label for="checkoutName">Seu nome
+          <input id="checkoutName" type="text" autocomplete="name" placeholder="Digite seu nome" required>
+        </label>
+        <label for="checkoutCity">Cidade de entrega
+          <input id="checkoutCity" type="text" autocomplete="address-level2" placeholder="Ex.: Teresópolis" required>
+          <small id="cityHint">Pagamento disponível: Pix.</small>
+        </label>
+        <label for="checkoutCoupon">Cupom de desconto
+          <div class="coupon-field"><input id="checkoutCoupon" type="text" inputmode="text" autocomplete="off" placeholder="Digite seu cupom"><button type="button" id="applyCoupon">APLICAR</button></div>
+          <small id="couponMessage">Use ARENA10 para ganhar 10% OFF em qualquer camisa.</small>
+        </label>
+        <label>Forma de pagamento
+          <div class="payment-options">
+            <button type="button" class="payment-option selected" data-payment="Pix"><b>PIX</b><span>Disponível para todas as cidades</span></button>
+            <button type="button" class="payment-option" data-payment="Cartão" id="cardOption"><b>CARTÃO</b><span>Disponível somente em Teresópolis</span></button>
+          </div>
+        </label>
+        <div class="checkout-warning" id="paymentWarning" hidden></div>
+        <label for="checkoutNote">Observação <span>(opcional)</span>
+          <textarea id="checkoutNote" rows="3" placeholder="Ex.: entregar à tarde, referência do endereço..."></textarea>
+        </label>
+      </div>
+      <div class="checkout-order-preview" id="checkoutOrderPreview"></div>
+      <button class="btn btn-green" id="whatsappCheckout">ABRIR PEDIDO NO WHATSAPP <span>↗</span></button>
+      <small class="checkout-footnote">O pagamento não é cobrado pelo site. O atendimento confirmará disponibilidade, valor do frete e instruções de pagamento pelo WhatsApp.</small>
+    </div>
+  </div>
+
+  <div class="modal" id="productModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="close-btn modal-close" data-close aria-label="Fechar">×</button><div id="modalContent"></div>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <button class="floating-whatsapp" id="floatingWhats" aria-label="Fale pelo WhatsApp">☏</button>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
+  <script src="script.js"></script>
+  <script src="auth.js"></script>
+</body>
+</html>

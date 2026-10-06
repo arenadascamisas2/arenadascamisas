@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap');
+:root{--ink:#101112;--paper:#f4f2ed;--green:#b8f44a;--muted:#777;--line:rgba(16,17,18,.12)}*{box-sizing:border-box}body{margin:0;min-height:100vh;background:var(--paper);color:var(--ink);font-family:Inter,Arial,sans-serif}.auth-page{min-height:100vh;display:grid;grid-template-columns:1.05fr .95fr}.auth-visual{position:relative;overflow:hidden;background:#111;color:#fff;padding:48px;display:flex;flex-direction:column;justify-content:space-between}.auth-visual:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 75% 20%,rgba(184,244,74,.28),transparent 34%),linear-gradient(135deg,rgba(255,255,255,.04),transparent 55%)}.auth-visual:after{content:"";position:absolute;width:520px;height:520px;border:1px solid rgba(184,244,74,.25);border-radius:50%;right:-190px;bottom:-160px;box-shadow:0 0 0 70px rgba(184,244,74,.035),0 0 0 140px rgba(184,244,74,.025)}.auth-brand{position:relative;z-index:2;color:#fff;text-decoration:none;display:inline-flex;align-items:center;gap:12px;font-weight:900;letter-spacing:-1px}.auth-mark{width:48px;height:48px;border:2px solid var(--green);display:grid;place-items:center;font-family:"Barlow Condensed";font-size:30px;transform:skew(-7deg)}.auth-brand small{display:block;font-size:9px;letter-spacing:2px;font-weight:800;opacity:.6}.auth-visual-copy{position:relative;z-index:2;max-width:600px}.eyebrow{font-size:11px;font-weight:800;letter-spacing:2px}.auth-visual h1{font:900 clamp(62px,7vw,110px)/.8 "Barlow Condensed";letter-spacing:-3px;margin:18px 0;text-transform:uppercase}.auth-visual h1 em{color:var(--green);font-style:normal}.auth-visual p{max-width:430px;color:rgba(255,255,255,.68);line-height:1.7}.auth-number{position:relative;z-index:2;font:900 18px "Barlow Condensed";letter-spacing:2px;color:rgba(255,255,255,.4)}.auth-panel{display:flex;align-items:center;justify-content:center;padding:48px}.auth-card{width:min(480px,100%)}.auth-kicker{font:800 14px "Barlow Condensed";letter-spacing:2px;margin-bottom:10px}.auth-card h2{font:900 clamp(44px,5vw,68px)/.9 "Barlow Condensed";letter-spacing:-1.5px;margin:0 0 12px}.auth-card h2 em{font-style:normal}.auth-sub{color:#707070;line-height:1.6;margin:0 0 30px}.auth-form{display:grid;gap:16px}.auth-field{display:grid;gap:7px}.auth-field label{font-size:11px;font-weight:800;letter-spacing:1px}.auth-field input{width:100%;border:1px solid var(--line);background:#fff;padding:16px 17px;font:600 15px Inter;border-radius:0;outline:none;transition:.2s}.auth-field input:focus{border-color:#101112;box-shadow:0 0 0 3px rgba(184,244,74,.32)}.password-wrap{position:relative}.password-wrap input{padding-right:70px}.show-pass{position:absolute;right:8px;top:8px;height:40px;border:0;background:transparent;font-size:10px;font-weight:800;cursor:pointer}.auth-submit{border:0;background:#101112;color:#fff;padding:17px 20px;font:900 14px "Barlow Condensed";letter-spacing:1.5px;cursor:pointer;transition:.2s}.auth-submit:hover{transform:translateY(-2px);background:#1d1f20}.auth-submit span{color:var(--green)}.auth-switch{margin-top:22px;padding-top:22px;border-top:1px solid var(--line);font-size:13px;color:#666}.auth-switch a{color:#101112;font-weight:800}.auth-message{min-height:20px;font-size:12px;font-weight:700}.auth-message.error{color:#b42318}.auth-message.success{color:#287a2c}.back-home{display:inline-block;margin-top:25px;color:#777;text-decoration:none;font-size:12px;font-weight:800;letter-spacing:1px}.back-home:hover{color:#111}.terms{font-size:11px;line-height:1.5;color:#888}.terms a{color:#333}@media(max-width:850px){.auth-page{grid-template-columns:1fr}.auth-visual{min-height:330px;padding:30px}.auth-visual h1{font-size:62px}.auth-panel{padding:38px 24px}.auth-number{display:none}}@media(max-width:480px){.auth-visual{min-height:260px}.auth-visual h1{font-size:52px}.auth-panel{padding:30px 18px}}
+
+/* Responsividade extra das telas de login/cadastro */
+html,body{max-width:100%;overflow-x:hidden}
+.auth-page{min-height:100svh}
+.auth-panel{min-width:0}
+.auth-card{min-width:0}
+.auth-field input,.auth-submit,.password-wrap{max-width:100%}
+@media(max-width:850px){
+  .auth-page{grid-template-columns:1fr}
+  .auth-visual{min-height:300px;padding:clamp(24px,6vw,40px)}
+  .auth-visual-copy{margin-top:34px}
+  .auth-panel{padding:34px 24px 40px}
+}
+@media(max-width:600px){
+  .auth-visual{min-height:250px;padding:22px max(18px,env(safe-area-inset-left)) 25px}
+  .auth-brand{gap:9px}
+  .auth-mark{width:42px;height:42px;font-size:26px}
+  .auth-visual h1{font-size:clamp(48px,14vw,66px);letter-spacing:-2px}
+  .auth-visual p{font-size:12px;line-height:1.55;margin-bottom:0}
+  .auth-panel{padding:28px max(16px,env(safe-area-inset-left)) calc(30px + env(safe-area-inset-bottom))}
+  .auth-card h2{font-size:clamp(42px,13vw,58px)}
+  .auth-sub{font-size:12px;margin-bottom:23px}
+  .auth-field input{font-size:16px;padding:14px 15px}
+  .auth-submit{min-height:50px}
+}
+@media(max-width:380px){
+  .auth-visual{min-height:230px}
+  .auth-visual h1{font-size:47px}
+  .auth-visual p{font-size:11px}
+  .auth-panel{padding-inline:13px}
+}
+@media(orientation:landscape) and (max-height:600px) and (max-width:900px){
+  .auth-page{grid-template-columns:1fr 1fr}
+  .auth-visual{min-height:100svh;padding:24px}
+  .auth-visual h1{font-size:clamp(40px,8vw,62px)}
+  .auth-panel{padding:24px}
+}
